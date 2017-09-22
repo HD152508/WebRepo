@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>BLOG</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<link href="../css/myblogCSS.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">BLOG</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link" href="myblog.html">Home</a>
+                <a class="nav-link" href="Profile.html">Profile</a>
+                <a class="nav-link" href="Favorite.html">Favorite</a>
+								<a class="nav-link active" href="#">Bucket</a>
+								<a class="nav-link" data-toggle="modal" data-target="#logInModal" href="#">Log In</a>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="contents">
+            <h1 class="cover-heading">Bucket</h1>
+            <p class="lead">
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">스카이 다이빙 해보기</span>
+							</label><br />
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">일년 동안 세계 여행 다니기</span>
+							</label><br />
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">부모님 밥상 차려드리기</span>
+							</label><br />
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">빵집 차리기</span>
+							</label><br />
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input" checked>
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">기숙사에서 살아보기</span>
+							</label><br />
+							<label class="custom-control custom-checkbox">
+							  <input type="checkbox" class="custom-control-input">
+							  <span class="custom-control-indicator"></span>
+							  <span class="custom-control-description">현지인과 자유롭게 대화할 수 있을 정도로 4개국어</span>
+							</label>
+						</p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="https://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="loginTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginTitle">로그인</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form class="form-inline my-2 my-lg-0" id="SigninForm">
+							<div class="form-group row">
+					      <label class="col-sm-2 col-form-label">ID</label>
+					      <div class="col-sm-10">
+					        <input class="form-control mr-sm-2" type="text" placeholder="아이디" aria-label="ID" id="id" required>
+					      </div>
+					    </div>
+					    <div class="form-group row">
+					      <label  class="col-sm-2 col-form-label">Password</label>
+					      <div class="col-sm-10">
+					        <input class="form-control mr-sm-2" type="password" placeholder="비밀번호" aria-label="PW" id="pw" required>
+					      </div>
+					    </div>
+							<button type="submit" class="btn btn-primary btn-sm">로그인</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="loginResultModal" tabindex="-1" role="dialog" aria-labelledby="loginResultTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginResultTitle">로그인 결과</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	<script src="../js/blogJS.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+</body>
+</html>
