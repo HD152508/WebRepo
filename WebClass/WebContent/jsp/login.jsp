@@ -7,16 +7,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>LogIn</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" href="/WebClass/css/signin.css">
+<link rel="stylesheet" href="/WebClass/css/signin.css" >
 </head>
 <body>
 <div class="container">
-
-  <form class="form-signin" action="/WebClass/login" method="post">
+	
+	<%
+		String id = (request.getParameter("id") == null) ? "" : request.getParameter("id");
+	%>
+	
+  <form class="form-signin" action="/WebClass/bloglogin" method="post">
     <h2 class="form-signin-heading">Please sign in</h2>
     
     <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" name="id" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+    <input type="email" name="id" value="<%= id %>" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
     
     <label for="inputPassword" class="sr-only">Password</label>
     <input type="password" name="pwd" id="inputPassword" class="form-control" placeholder="Password" required>
@@ -36,9 +40,11 @@
 	<%
 		if("error".equals(request.getAttribute("msg"))) {
 	%>
+			
+	
 		var myModal = $('#myModal');
-		myModal.find('.modal-title').text('Login Error');
-		myModal.find('.modal-body').text('Invalid username or password');
+		myModal.find('.modal-title').text('뤄긴 에뤄');
+		myModal.find('.modal-body').text('인뷀리드 유줘눼임 오얼 패쓰워ㄹ드');
 		myModal.modal();
 	<%
 		}
