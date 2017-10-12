@@ -29,9 +29,9 @@
               <h3 class="masthead-brand">BLOG</h3>
               <nav class="nav nav-masthead">
                 <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="Profile.html">Profile</a>
-                <a class="nav-link" href="Favorite.html">Favorite</a>
-				<a class="nav-link" href="Bucket.html">Bucket</a>
+                <a class="nav-link" href="/WebClass/myblog/Profile.html">Profile</a>
+                <a class="nav-link" href="/WebClass/myblog/Favorite.html">Favorite</a>
+				<a class="nav-link" href="/WebClass/myblog/Bucket.html">Bucket</a>
 				
 				<%-- 세션에 사용자 정보가 없는 경우 --%>
 			    <%
