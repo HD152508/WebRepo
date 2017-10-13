@@ -38,7 +38,7 @@
 			    	UserVO user = (UserVO) session.getAttribute("user");
 			    	if (user == null) {
 			    %>
-			    	<a class="nav-link" href="/WebClass/jsp/login.jsp">Log In</a>
+			    	<a class="nav-link" href="/WebClass/login">Log In</a>
 			    <% } else { %>
 			    <%-- 세션이 있는 경우 --%>
 				    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">

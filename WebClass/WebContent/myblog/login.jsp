@@ -41,8 +41,8 @@
 		if("error".equals(request.getAttribute("msg"))) {
 	%>	
 		var myModal = $('#myModal');
-		myModal.find('.modal-title').text('뤄긴 에뤄');
-		myModal.find('.modal-body').text('인뷀리드 유줘눼임 오얼 패쓰워ㄹ드');
+		myModal.find('.modal-title').text('Login Error');
+		myModal.find('.modal-body').text('Invalid username or password');
 		myModal.modal();
 	<%
 		}
