@@ -5,7 +5,7 @@
                 <a class="nav-link" href="/WebClass/session">Menu1 <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this)">
-                <a class="nav-link" href="a.html">Menu2</a>
+                <a class="nav-link" href="/WebClass/list">Menu2</a>
             </li>
             <li class="nav-item" onmouseover="menu_over(this);" onmouseout="menu_out(this)">
                 <a class="nav-link" href="#">Menu3</a>
